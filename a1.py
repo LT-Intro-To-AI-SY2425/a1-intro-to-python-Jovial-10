@@ -32,6 +32,12 @@ def absolute(n: int) -> int:
     """
     raise NotImplementedError("absolute")
 
+    # if n<0: 
+    #     return -1 * n
+    # else 
+    #     return n
+    return -1 * n if n <0 else n
+
 
 def factorial(n: int) -> int:
     """Takes a number n, and computes the factorial n! You can assume the passed in
@@ -130,6 +136,7 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
+    assert absolute(1)== 1, "absolute of 1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
         1,
@@ -144,5 +151,6 @@ if __name__ == "__main__":
     assert duck_duck_goose(names) == ["roscoe", "law"]
 
     print("All tests passed!")
+
 
     
