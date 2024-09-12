@@ -126,6 +126,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
+# hash creates a single line comment
+
 if __name__ == "__main__":
     assert absolute(-1) == 1, "absolute of -1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
