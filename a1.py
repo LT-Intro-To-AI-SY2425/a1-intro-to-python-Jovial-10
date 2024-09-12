@@ -12,6 +12,11 @@ This portion of the assignment will not be graded, but this gives you some probl
 check, if you do not complete the generative AI portion of the assignment.
 """
 
+""""
+this is a multi-line string
+
+"""
+
 from typing import List, TypeVar
 
 
@@ -137,3 +142,5 @@ if __name__ == "__main__":
     assert duck_duck_goose(names) == ["roscoe", "law"]
 
     print("All tests passed!")
+
+    
