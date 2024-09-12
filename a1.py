@@ -30,7 +30,6 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    raise NotImplementedError("absolute")
 
     # if n<0: 
     #     return -1 * n
@@ -135,8 +134,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
 # hash creates a single line comment
 
 if __name__ == "__main__":
+    assert absolute(1) == 1, "absolute of 1 failed"
     assert absolute(-1) == 1, "absolute of -1 failed"
-    assert absolute(1)== 1, "absolute of 1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
         1,
