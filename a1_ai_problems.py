@@ -43,14 +43,14 @@ def guessGame():
     guessNum = random.randint(0,10)
     operation = None
 
-    while guessNum != operation
+    while guessNum != operation:
         operation = float(input("Enter guess"))
 
-        if operation < guessNum
+        if operation < guessNum:
             print("Too low")
-        elif operation > guessNum
+        elif operation > guessNum:
             print("Too high")
-        elif operation = guessNum
+        else:
             print("Correct!")
 
 
