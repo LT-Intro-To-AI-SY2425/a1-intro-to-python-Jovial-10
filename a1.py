@@ -48,10 +48,21 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    raise NotImplementedError("factorial")
+
+    # for n in 
+    #     return n * n-1 
+        #do later
+
+    result = 1
+
+    T = TypeVar("T")
+
+    for x in range of (1, n+1)
+    # same as result *= x below
+        result = result * x 
+    return result
 
 
-T = TypeVar("T")
 
 
 def every_other(lst: List[T]) -> List[T]:
@@ -65,7 +76,8 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    for T in list: 
+         
 
 
 def sum_list(lst: List[int]) -> int:
@@ -137,6 +149,8 @@ if __name__ == "__main__":
     assert absolute(1) == 1, "absolute of 1 failed"
     assert absolute(-1) == 1, "absolute of -1 failed"
     assert factorial(4) == 24, "factorial of 4 failed"
+    assert factorial(5) == 120, "factorial of 5 failed"
+    assert factorial(0) == 1, "factorial of 0 failed"
     assert every_other([1, 2, 3, 4, 5]) == [
         1,
         3,
