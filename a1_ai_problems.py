@@ -17,7 +17,7 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
-
+# arithmetic calculator 
 
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
@@ -35,4 +35,23 @@ else:
     result = "Invalid operation"
 
 print("Result:", result)
+
+# guessing game
+
+def guessGame(): 
+
+    guessNum = random.randint(0,10)
+    operation = None
+
+    while guessNum != operation
+        operation = float(input("Enter guess"))
+
+        if operation < guessNum
+            print("Too low")
+        elif operation > guessNum
+            print("Too high")
+        elif operation = guessNum
+            print("Correct!")
+
+
 
