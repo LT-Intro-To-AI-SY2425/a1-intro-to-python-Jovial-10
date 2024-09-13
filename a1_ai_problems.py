@@ -46,7 +46,7 @@ def guessGame():
     operation = None
 
     while guessNum != operation:
-        operation = float(input("Enter guess"))
+        operation = float(input("Enter guess: "))
 
         if operation < guessNum:
             print("Too low")
@@ -55,7 +55,7 @@ def guessGame():
         else:
             print("Correct!")
 
-guessgame()
+guessGame()
 
 
 
