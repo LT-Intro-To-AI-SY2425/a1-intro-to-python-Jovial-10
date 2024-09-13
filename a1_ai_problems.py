@@ -38,6 +38,8 @@ print("Result:", result)
 
 # guessing game
 
+import random
+
 def guessGame(): 
 
     guessNum = random.randint(0,10)
@@ -52,6 +54,8 @@ def guessGame():
             print("Too high")
         else:
             print("Correct!")
+
+guessgame()
 
 
 
