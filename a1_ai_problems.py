@@ -17,3 +17,22 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
+
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+operation = input("Enter operation (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+elif operation == "*":
+    result = num1 * num2
+elif operation == "/":
+    result = num1 / num2
+else:
+    result = "Invalid operation"
+
+print("Result:", result)
+
