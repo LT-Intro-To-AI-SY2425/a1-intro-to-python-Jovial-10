@@ -57,7 +57,7 @@ def factorial(n: int) -> int:
 
     T = TypeVar("T")
 
-    for x in range of (1, n+1)
+    for x in range (1, n+1):
     # same as result *= x below
         result = result * x 
     return result
