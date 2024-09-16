@@ -65,7 +65,7 @@ print(mcList)
 
 print("What meal do you want to order?")
 
-ask = float(input("0, 1, 2, or 3?"))
+ask = int(input("0, 1, 2, or 3? "))
 
 print(mcList[ask])
 
