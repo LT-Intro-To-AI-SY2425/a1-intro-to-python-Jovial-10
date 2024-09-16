@@ -63,7 +63,7 @@ mcList = ["McChicken", "McFrappe", "McNuggets", "Big Mac"]
 
 print(mcList)
 
-println("What meal do you want to order?")
+print("What meal do you want to order?")
 
 ask = float(input("0, 1, 2, or 3?"))
 
