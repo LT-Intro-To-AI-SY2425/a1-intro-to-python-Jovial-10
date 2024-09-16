@@ -53,14 +53,14 @@ def factorial(n: int) -> int:
     #     return n * n-1 
         #do later
 
-    result = 1
-
-    T = TypeVar("T")
-
-    for x in range (1, n+1):
-    # same as result *= x below
-        result = result * x 
+    for x in range(1, n + 1):
+        result *= x
+    print(result)
     return result
+
+
+
+T = TypeVar("T")
 
 
 
@@ -76,7 +76,9 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-    raise NotImplementedError("every_other")
+    for i in range(0,len(lst),2):
+        new_lst.append(lst[i])
+    return new_lst
 
          
 
