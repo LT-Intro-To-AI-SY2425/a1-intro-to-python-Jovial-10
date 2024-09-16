@@ -45,6 +45,8 @@ def guessGame():
     guessNum = random.randint(0,10)
     operation = None
 
+    print("Guess a number from 0-10 ")
+
     while guessNum != operation:
         operation = float(input("Enter guess: "))
 
