@@ -17,7 +17,7 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
-# arithmetic calculator 
+# arithmetic calculator AI 1
 
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
@@ -36,7 +36,7 @@ else:
 
 print("Result:", result)
 
-# guessing game
+# guessing game AI 2
 
 import random
 
@@ -57,5 +57,15 @@ def guessGame():
 
 guessGame()
 
+# Mcdonalds serving program AI 3
 
+mcList = ["McChicken", "McFrappe", "McNuggets", "Big Mac"]
+
+print(mcList)
+
+println("What meal do you want to order?")
+
+ask = float(input("0, 1, 2, or 3?"))
+
+print(mcList[ask])
 
