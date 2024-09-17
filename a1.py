@@ -110,7 +110,12 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+    n=0
+    a=0
+    for el in lst: 
+        n+=el
+        a+1
+    return (n/a)
 
 
 def median(lst: List[int]) -> float:
@@ -166,7 +171,10 @@ if __name__ == "__main__":
     ], "every_other of [1,2,3,4,5] failed"
     assert sum_list([1, 2, 3]) == 6, "sum_list of [1,2,3] failed"
     assert mean([1, 2, 3, 4, 5]) == 3, "mean of [1,2,3,4,5] failed"
+    assert mean([1, 2, 3, 4, 6]) == 3.5, "mean of [1,2,3,4,6] failed"
+    assert mean([]) == 0, "mean of [] failed"
     assert median([1, 2, 3, 4, 5]) == 3, "median of [1,2,3,4,5] failed"
+    assert median([1, 2, 3, 4, 5, 6 ]) == 3.5, "median of [1,2,3,4,5,6] failed"
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
