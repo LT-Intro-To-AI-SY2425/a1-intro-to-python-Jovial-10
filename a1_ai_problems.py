@@ -69,5 +69,5 @@ print("What meal do you want to order?")
 
 ask = int(input("0, 1, 2, or 3? "))
 
-print(mcList[ask])
+print("You ordered a ", mcList[ask], ", here you go...")
 
