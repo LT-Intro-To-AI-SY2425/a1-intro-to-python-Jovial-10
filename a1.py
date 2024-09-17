@@ -78,6 +78,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    new_list=[]
     for i in range(0,len(lst),2):
         new_lst.append(lst[i])
     return new_lst
