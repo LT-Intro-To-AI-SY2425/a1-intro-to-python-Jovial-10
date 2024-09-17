@@ -110,12 +110,17 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    n=0
-    a=0
-    for el in lst: 
-        n+=el
-        a+1
-    return (n/a)
+    # n=0
+    # a=0
+    # for el in lst: 
+    #     n+=el
+    #     a+1
+    # return (n/a)
+
+    s= sum_list(lst)
+    print(s)
+    num_el= len(lst)
+    print(num_el)
 
 
 def median(lst: List[int]) -> float:
