@@ -121,6 +121,7 @@ def mean(lst: List[int]) -> float:
     print(s)
     num_el= len(lst)
     print(num_el)
+    return s/num_el
 
 
 def median(lst: List[int]) -> float:
