@@ -111,6 +111,7 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
+    # java way (me) 
     # n=0
     # a=0
     # for el in lst: 
