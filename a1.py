@@ -176,6 +176,7 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         while(count == 3):
             lst[i].remove()
             if(lst.length < 3):
+                return lst
                 exit()
 
 
