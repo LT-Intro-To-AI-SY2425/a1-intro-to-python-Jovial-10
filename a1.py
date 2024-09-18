@@ -167,7 +167,19 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     Returns:
         the resulting list after playing duck duck goose
     """
-    raise NotImplementedError("duck_duck_goose")
+    
+    count = 0
+
+    for i in range(lst):
+        count+1
+    
+        while(count = 3):
+            lst[i].remove()
+            if(lst.length < 3):
+                exit()
+
+
+
 
 
 # this line causes the nested code to be skipped if the file is imported instead of run
