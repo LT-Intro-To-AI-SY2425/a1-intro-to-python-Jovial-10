@@ -168,16 +168,25 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
         the resulting list after playing duck duck goose
     """
     
-    count = 0
-
-    for i in range(lst):
-        count+1
+    i = 0
+    current = "duck1"
+    while len(lst) > 2:
+        if current == "duck1":
+            current = "duck2"
+            i += 1
+        elif current == "duck2":
+            current = "goose"
+            i += 1
+        else:
+            current = "duck1"
+            lst.pop(i)
+        
+        # wrap around if we get to the end
+        if i == len(lst):
+            i = 0
+        # alternate i %= len(lst)
     
-        while(count == 3):
-            lst[i].remove()
-            if(lst.length < 3):
-                return lst
-                exit()
+    return lst
 
 
 
@@ -206,6 +215,8 @@ if __name__ == "__main__":
 
     names = ["roscoe", "kim", "woz", "solin", "law", "remess"]
     assert duck_duck_goose(names) == ["roscoe", "law"]
+    names = ["roscoe", "solin", "law", "remess"]
+    assert duck_duck_goose(names) == ["roscoe", "remess"]
 
     print("All tests passed!")
 
