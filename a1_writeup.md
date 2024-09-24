@@ -14,10 +14,13 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+I like the simplicity of the language. It is a lot easier to learn than Java in my opinion.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
+Both Java and Python have a lot of similar data structures and jargon. Loops and interations are pretty similar whereas naming variables and defining functions are a bit different. 
 
 
 3. What are some things that you learned through this assignment?
+
+I have learned some of the basics of pythons and also some fundamental programs that will likely be useful to know for future assignments.
